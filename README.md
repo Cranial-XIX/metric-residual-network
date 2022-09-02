@@ -1,12 +1,25 @@
 # Metric Residual Networks for Sample Efficient Goal-Conditioned Reinforcement Learning
 
 This repo contains the official implementation for Metric Residual Networks, and other
-neural architectures including monolithic critic, Bilinear Value Network (BVN),
-and Poisson Quasimetric Embedding (PQE), on 12-GCRL problems.
+neural architectures for the goal-conditioned reinforcement learning (GCRL) critic network.
 
+### 12 GCRL environments
+<p align="center">
 <img src="https://github.com/Cranial-XIX/metric-residual-network/blob/master/misc/gcrl_env.png" width="800">
-<img src="https://github.com/Cranial-XIX/metric-residual-network/blob/master/misc/gcrl.png" width="800">
+<p>
 
+### Implemented Critic Networks
+<p align="center">
+<img src="https://github.com/Cranial-XIX/metric-residual-network/blob/master/misc/gcrl.png" width="800">
+<p>
+
+| Critic Architecture |
+| --- |
+| Monolithic Network |
+| [Deep/Wide Norms (DN/WN)](https://arxiv.org/pdf/2002.05825.pdf) |
+| [Bilinear Value Network (BVN)](https://arxiv.org/pdf/2204.13695.pdf) |
+| [Poisson Quasimetric Embedding (PQE)](https://arxiv.org/pdf/2206.15478.pdf) |
+| [Metric Residual Network (MRN)](https://arxiv.org/abs/2208.08133.pdf) |
 
 ## 1. Dependencies
 Coming soon!
@@ -16,19 +29,20 @@ The code structure is listed in below. Note that we provide MHER, GCSL, and WGCS
 implementation in PyTorch as well for the convenience of future research, though
 they are not used in our paper.
 ```
+metric-residual-network
  └─run_all.sh (the script to reproduce all results using different critics)
  └─run.sh     (the script to run with a specific critic architecture)
  └─main.py    (the main file to run all code)
  └─plot.py    (plotting utils to make figures in the paper)
  └─src
-   └─model.py (include different critic architectures, and the actor architecture)
-   └─agent
-     └─base.py  (base class for goal-conditioned agent)
-     └─her.py   (the Hindsight Experience Replay agent)
-     └─ddpg.py  (DDPG agent)
-     └─mher.py  (M-HER agent)
-     └─gcsl.py  (GCSL agent)
-     └─wgcsl.py (WGCSL agent)
+    └─model.py (include different critic architectures, and the actor architecture)
+    └─agent
+       └─base.py  (base class for goal-conditioned agent)
+       └─her.py   (the Hindsight Experience Replay agent)
+       └─ddpg.py  (DDPG agent)
+       └─mher.py  (M-HER agent)
+       └─gcsl.py  (GCSL agent)
+       └─wgcsl.py (WGCSL agent)
  ```
 
 ## 2. To reproduce results in the paper
