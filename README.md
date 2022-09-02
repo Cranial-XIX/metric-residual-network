@@ -4,8 +4,8 @@ This repo contains the official implementation for Metric Residual Networks, and
 neural architectures including monolithic critic, Bilinear Value Network (BVN),
 and Poisson Quasimetric Embedding (PQE), on 12-GCRL problems.
 
-![Alt Text](https://github.com/Cranial-XIX/MRN/blob/main/misc/gcrl_env.pdf)
-![Alt Text](https://github.com/Cranial-XIX/MRN/blob/main/misc/mrn.pdf)
+<img src="https://github.com/Cranial-XIX/metric-residual-network/blob/master/misc/gcrl_env.png" width="800">
+<img src="https://github.com/Cranial-XIX/metric-residual-network/blob/master/misc/gcrl.png" width="800">
 
 
 ## 1. Dependencies
