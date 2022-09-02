@@ -1,0 +1,4 @@
+*.pyc
+backup/
+results/
+tmp/
