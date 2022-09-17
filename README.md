@@ -22,7 +22,19 @@ neural architectures for the goal-conditioned reinforcement learning (GCRL) crit
 | [Metric Residual Network (MRN)](https://arxiv.org/abs/2208.08133.pdf) |
 
 ## 1. Dependencies
-Coming soon!
+Create conda environment.
+```
+conda create -n metric-residual-network python=3.7.4
+conda activate metric-residual-network
+```
+Install PyTorch
+```
+pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
+Download [mujoco200](https://www.roboti.us/download.html). Then install pip requirements:
+```
+pip install -r requirements.txt
+```
 
 ## 2. Code structure
 The code structure is listed in below. Note that we provide MHER, GCSL, and WGCSL
