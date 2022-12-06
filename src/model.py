@@ -495,7 +495,9 @@ class CriticAsymMax(nn.Module):
         sym2 = self.sym(phih)
         asym1 = self.asym(fh)
         asym2 = self.asym(phih)
-        dist_s = (sym1-sym2).pow(2).mean(-1, keepdims=True)
+        # A bug fix, since the metric should be the l2 norm instead of the square loss.
+        # Thanks Wang et al for pointing this out at https://arxiv.org/abs/2211.15120
+        dist_s = (sym1-sym2).pow(2).mean(-1, keepdims=True).sqrt()
         res = F.relu(asym1 - asym2)
         dist_a = res.max(-1)[0].view(-1, 1)
         dist = dist_s + dist_a

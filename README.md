@@ -21,6 +21,8 @@ neural architectures for the goal-conditioned reinforcement learning (GCRL) crit
 | [Poisson Quasimetric Embedding (PQE)](https://arxiv.org/pdf/2206.15478.pdf) |
 | [Metric Residual Network (MRN)](https://arxiv.org/abs/2208.08133.pdf) |
 
+**update 2022/12/6:** Thank [@SsnL](https://github.com/SsnL) for pointing out the bug that the metric part should be l2-norm instead of square loss. (See [this paper](https://arxiv.org/abs/2211.15120))
+
 ## 1. Dependencies
 Create conda environment.
 ```
