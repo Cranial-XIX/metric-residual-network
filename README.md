@@ -64,7 +64,12 @@ metric-residual-network
 ./run_all.sh
 ```
 
-## 3. Citations
+## 3. Checkpoints of trained models
+For the convenience of future research, you can download all pretrained checkpoints from [here](https://drive.google.com/file/d/1SjzP4Oezt-CZVQ_5BPx5NoI0UIi6YEnl/view?usp=sharing) and 
+unzip it into ```result``` folder and put it under this repo. Then you can use plot.py to reproduce 
+the 2 main figures about on the 12 Fetch environments.
+
+## 4. Citations
 If you find our work interesting or the repo useful, please consider citing [this paper](https://arxiv.org/abs/2208.08133.pdf):
 ```
 @article{liu2022metric,
