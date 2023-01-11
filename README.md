@@ -39,7 +39,14 @@ pip install -r requirements.txt
 ```
 
 ## 2. Code structure
-The code structure is listed in below. Note that we provide MHER, GCSL, and WGCSL
+The code structure is listed in below. Note that we provide 
+
+|             Method                      | Paper |
+| --------------------------------------- | ----- |
+| Model-based Hindsight Experience Replay | [MHER](https://arxiv.org/pdf/2107.00306.pdf) |
+| Goal-Conditioned Supervised Learning    | [GCSL](https://openreview.net/pdf?id=rALA0Xo6yNJ) |
+| Weighted Goal-Conditioned Supervised Learning | [WGCSL](https://arxiv.org/pdf/2202.04478.pdf) |
+
 implementation in PyTorch as well for the convenience of future research, though
 they are not used in our paper.
 ```
